@@ -47,25 +47,25 @@ clone_repos() {
     git clone --branch v1.0.10 --depth 1 https://github.com/eic/irt.git
     git clone https://github.com/eic/EDM4eic.git
     git clone https://eicweb.phy.anl.gov/EIC/benchmarks/detector_benchmarks.git
-    git clone https://github.com/kumardeepraman/Installing_Drich-dev.git
+    git clone https://github.com/kumardeepraman/learning-drich-dev.git
 
     echo
     echo "Dependencis cloned & files fixed fixed."
     echo
 
-    cp Installing_Drich-dev/recon_sandbox.yaml config/recon_sandbox.yaml
-    cp Installing_Drich-dev/environ.sh .
-    cp Installing_Drich-dev/momentum_scan.rb scripts/momentum_scan.rb
-    cp Installing_Drich-dev/momentum_scan_2D_draw.C scripts/src/momentum_scan_2D_draw.C
-    cp Installing_Drich-dev/g4dRIChOptics.hh src/g4dRIChOptics.hh
-    cp Installing_Drich-dev/dconfig-chandra.C irt/delphes/scripts/dconfig-chandra.C
-    cp Installing_Drich-dev/dconfig.C irt/delphes/scripts/dconfig.C
-    cp Installing_Drich-dev/dloop.C irt/delphes/scripts/dloop.C
-    cp Installing_Drich-dev/IrtGeoDRICH.cc EICrecon/src/services/geometry/richgeo/IrtGeoDRICH.cc
-    cp Installing_Drich-dev/IrtGeoPFRICH.cc EICrecon/src/services/geometry/richgeo/IrtGeoPFRICH.cc
-    cp Installing_Drich-dev/CherenkovPIDAnalysis.cc detector_benchmarks/benchmarks/rich/src/CherenkovPIDAnalysis.cc
-    cp Installing_Drich-dev/CMakeLists.txt detector_benchmarks/CMakeLists.txt
-    cp Installing_Drich-dev/draw_benchmark.py detector_benchmarks/benchmarks/rich/draw_benchmark.py
+    cp learning-drich-dev/installingIRTv1/recon_sandbox.yaml config/recon_sandbox.yaml
+    cp learning-drich-dev/installingIRTv1/environ.sh .
+    cp learning-drich-dev/installingIRTv1/momentum_scan.rb scripts/momentum_scan.rb
+    cp learning-drich-dev/installingIRTv1/momentum_scan_2D_draw.C scripts/src/momentum_scan_2D_draw.C
+    cp learning-drich-dev/installingIRTv1/g4dRIChOptics.hh src/g4dRIChOptics.hh
+    cp learning-drich-dev/installingIRTv1/dconfig-chandra.C irt/delphes/scripts/dconfig-chandra.C
+    cp learning-drich-dev/installingIRTv1/dconfig.C irt/delphes/scripts/dconfig.C
+    cp learning-drich-dev/installingIRTv1/dloop.C irt/delphes/scripts/dloop.C
+    cp learning-drich-dev/installingIRTv1/IrtGeoDRICH.cc EICrecon/src/services/geometry/richgeo/IrtGeoDRICH.cc
+    cp learning-drich-dev/installingIRTv1/IrtGeoPFRICH.cc EICrecon/src/services/geometry/richgeo/IrtGeoPFRICH.cc
+    cp learning-drich-dev/installingIRTv1/CherenkovPIDAnalysis.cc detector_benchmarks/benchmarks/rich/src/CherenkovPIDAnalysis.cc
+    cp learning-drich-dev/installingIRTv1/CMakeLists.txt detector_benchmarks/CMakeLists.txt
+    cp learning-drich-dev/installingIRTv1/draw_benchmark.py detector_benchmarks/benchmarks/rich/draw_benchmark.py
 
     echo "Next step before Module D is:"
     echo "   Source the drich environment: source environ.sh"
