@@ -196,7 +196,7 @@ void richgeo::IrtGeoDRICH::DD4hep_to_IRT() {
   // set reference refractive indices // NOTE: numbers may be overridden externally
   std::map<const std::string, double> rIndices;
   rIndices.insert({RadiatorName(kGas), 1.00076});
-  rIndices.insert({RadiatorName(kAerogel), 1.0260});
+  rIndices.insert({RadiatorName(kAerogel), 1.0256});
   rIndices.insert({"Filter", 1.5017});
   for (auto const& [rName, rIndex] : rIndices) {
     auto* rad = m_irtDetector->GetRadiator(rName.c_str());
