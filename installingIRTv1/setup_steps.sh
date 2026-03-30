@@ -43,18 +43,46 @@ enter_drich_dev() {
 clone_repos() {
     echo "This is Module C:"
     echo
-    echo "=== Cloning drich-dev dependencies ==="
+    echo "=== Cloning drich-dev dependencies (with fixed commits) ==="
+
+    # --- epic ---
     git clone https://github.com/eic/epic.git
-    git clone https://github.com/eic/EICrecon.git 
-    git clone --branch v1.0.10 --depth 1 https://github.com/eic/irt.git
+    cd epic
+    git checkout 5ebc46772
+    cd ..
+
+    # --- EICrecon ---
+    git clone https://github.com/eic/EICrecon.git
+    cd EICrecon
+    git checkout 6a7583db
+    cd ..
+
+    # --- irt (IRTv1 commit) ---
+    git clone https://github.com/eic/irt.git
+    cd irt
+    git checkout 188e837
+    cd ..
+
+    # --- EDM4eic ---
     git clone https://github.com/eic/EDM4eic.git
+    cd EDM4eic
+    git checkout 4f3c7fa
+    cd ..
+
+    # --- detector_benchmarks ---
     git clone https://eicweb.phy.anl.gov/EIC/benchmarks/detector_benchmarks.git
+    cd detector_benchmarks
+    git checkout 89780d3
+    cd ..
+
+    # --- learning repo (yours, keep latest) ---
     git clone https://github.com/kumardeepraman/learning-drich-dev.git
 
     echo
-    echo "Dependencis cloned & files fixed fixed."
+    echo "Dependencies cloned & checked out to fixed commits."
     echo
 
+    # --- file replacements ---
     cp learning-drich-dev/installingIRTv1/recon_sandbox.yaml config/recon_sandbox.yaml
     cp learning-drich-dev/installingIRTv1/environ.sh .
     cp learning-drich-dev/installingIRTv1/momentum_scan.rb scripts/momentum_scan.rb
@@ -72,7 +100,6 @@ clone_repos() {
     echo "Next step before Module D is:"
     echo "   Source the drich environment: source environ.sh"
     echo
-
 }
 
 
