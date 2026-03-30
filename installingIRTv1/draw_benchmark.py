@@ -12,7 +12,7 @@ r.gROOT.SetBatch(True)
 ################################################################
 RESID_MAX = 10 # cherenkov angle |residual| maximum
 RADIATORS = {
-        'Aerogel': { 'p_max': 30, 'p_rebin': 12, 'rindex_ref': 1.0260},
+        'Aerogel': { 'p_max': 30, 'p_rebin': 12, 'rindex_ref': 1.0256},
         'Gas':     { 'p_max': 70, 'p_rebin': 30, 'rindex_ref': 1.00076},
         'Merged':  { 'p_max': 70, 'p_rebin': 30, },
         }
