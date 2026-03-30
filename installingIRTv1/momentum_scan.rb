@@ -38,7 +38,7 @@ when "d"
   xRICH      = "dRICH"
   xrich      = "drich"
   radiator_h = {
-    :agl => { :id=>0, :testNum=>7, :rIndexRef=>1.0190,  :rIndexRange=>[1.01852,1.02381], :maxMomentum=>20.0, :maxNPE=>20, },
+    :agl => { :id=>0, :testNum=>7, :rIndexRef=>1.0256,  :rIndexRange=>[1.02524,1.02622], :maxMomentum=>20.0, :maxNPE=>20, },
     :gas => { :id=>1, :testNum=>8, :rIndexRef=>1.00076, :rIndexRange=>[1.00075,1.00084], :maxMomentum=>60.0, :maxNPE=>40, },
   }
 when "p"
@@ -46,7 +46,7 @@ when "p"
   xRICH      = "pfRICH"
   xrich      = "pfrich"
   radiator_h = {
-    :agl => { :id=>0, :testNum=>7, :rIndexRef=>1.0190, :rIndexRange=>[1.01852,1.02381], :maxMomentum=>20.0, :maxNPE=>40, },
+    :agl => { :id=>0, :testNum=>7, :rIndexRef=>1.0256, :rIndexRange=>[1.02524,1.02622], :maxMomentum=>20.0, :maxNPE=>40, },
     :gas => { :id=>1, :testNum=>8, :rIndexRef=>1.0013, :rIndexRange=>[1.0013,1.0015],   :maxMomentum=>60.0, :maxNPE=>40, },
   }
 else
