@@ -26,7 +26,7 @@ DRICH:
     numRIndexBins: 100
     Aerogel:
       zbins: 5
-      referenceRIndex: 1.0190
+      referenceRIndex: 1.0256
     Gas:
       zbins: 10
       referenceRIndex: 1.00076
