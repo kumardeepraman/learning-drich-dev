@@ -28,7 +28,7 @@ void momentum_scan_2D_draw(
       radiator_name = "Aerogel";
       mom_max       = 20;  // for plot zoom
       theta_max     = 230; // for plot zoom
-      rindex_ref    = 1.0190;
+      rindex_ref    = 1.0256;
       break;
     case kGas:
       radiator_name = "Gas";
