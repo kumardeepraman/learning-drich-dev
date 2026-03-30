@@ -11,7 +11,7 @@ void dloop(const char *fname = 0)
 {
 #ifdef _AEROGEL_
   auto delphes = new DelphesConfigRICH("dualRICH_aerogel");
-  delphes->SetRefractiveIndex(1.0260);
+  delphes->SetRefractiveIndex(1.0256);
   const char *dname = "EVALUATION.A";
 #else
   auto delphes = new DelphesConfigRICH("dualRICH_c2f6");
