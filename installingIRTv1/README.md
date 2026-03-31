@@ -4,7 +4,7 @@ chmod a+x setup_steps.sh
 
 ./setup_steps.sh --A
 
-./eic-shell
+./eic-shell --version 26.03.1-stable
 
 ./setup_steps.sh --B
 
