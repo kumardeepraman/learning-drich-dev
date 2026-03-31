@@ -1,6 +1,6 @@
 # drich-dev with IRTv1 — Installation & Validation Guide
 
-This repository provides a **reproducible workflow** to install, configure, and validate `drich-dev` using **IRTv1-compatible commits**.
+This repository provides a **reproducible workflow** to install, configure, and validate `drich-dev` using **IRTv1-compatible commits**. For detailed steps, have a look at the recipe: [Recipe Document](https://docs.google.com/document/d/17-yhA6OA-nsB_y0G8Yk7CQj2P_JGe8AjdYVmXRaoBUc/edit?usp=sharing)
 
 ---
 
