@@ -25,7 +25,7 @@ source /opt/detector/epic-main/setup.sh
 # source local environment (a build target from `epic`)
 # - overrides upstream `$DETECTOR*` vars
 # - prioritizes `$EIC_SHELL_PREFIX/lib` in `$LD_LIBRARY_PATH`
-[ -f $EIC_SHELL_PREFIX/setup.sh ] && source $EIC_SHELL_PREFIX/setup.sh
+[ -f $EIC_SHELL_PREFIX/bin/thisepic.sh ] && source $EIC_SHELL_PREFIX/bin/thisepic.sh
 
 # source EICrecon installation + environment patches
 if [ -f $EIC_SHELL_PREFIX/bin/eicrecon-this.sh ]; then
@@ -142,7 +142,7 @@ source /opt/detector/setup.sh
 # source local environment (a build target from `epic`)
 # - overrides upstream `$DETECTOR*` vars
 # - prioritizes `$EIC_SHELL_PREFIX/lib` in `$LD_LIBRARY_PATH`
-[ -f $EIC_SHELL_PREFIX/setup.sh ] && source $EIC_SHELL_PREFIX/setup.sh
+[ -f $EIC_SHELL_PREFIX/bin/thisepic.sh ] && source $EIC_SHELL_PREFIX/bin/thisepic.sh
 
 # source EICrecon installation + environment patches
 if [ -f $EIC_SHELL_PREFIX/bin/eicrecon-this.sh ]; then
