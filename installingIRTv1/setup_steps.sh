@@ -47,9 +47,9 @@ clone_repos() {
 
     # --- epic ---
     git clone https://github.com/eic/epic.git
-    cd epic
-    git checkout 5ebc46772
-    cd ..
+    # cd epic
+    # git checkout 5ebc46772
+    # cd ..
 
     # --- EICrecon ---
     git clone https://github.com/eic/EICrecon.git
