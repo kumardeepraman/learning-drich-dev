@@ -46,7 +46,7 @@ Expected output:
 ## 🌐 3. Enter eic-shell
 
 ```bash
-./eic-shell
+./eic-shell -v 26.03.1-stable
 ```
 
 ---
