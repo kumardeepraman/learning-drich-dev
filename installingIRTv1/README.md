@@ -29,7 +29,7 @@ chmod +x setup_steps.sh
 
 This installs the **eic-shell environment**.
 
-### ✔ Verify:
+### ✔ Verify (Not working):
 
 ```bash
 ./eic-shell --version
