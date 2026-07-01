@@ -36,7 +36,7 @@ For systems with **no access to CVMFS**, use the **following command** to instal
 
 ```bash
 curl -L https://github.com/eic/eic-shell/raw/main/install.sh | bash -s -v 26.03.1-stable
-```bash
+```
 
 
 
