@@ -23,31 +23,37 @@ chmod +x setup_steps.sh
 
 ## 🧩 2. Install EPIC Environment (Module A)
 
+For systems with access to CVMFS, use the following steps to install eic-shell:
+
 ```bash
 ./setup_steps.sh --A
 ```
 
 This installs the **eic-shell environment**.
 
-### ✔ Verify (Not working):
+
+For systems with **no access to CVMFS**, use the **following command** to install the specific version of eic-shell, **instead of using module A**:
 
 ```bash
-./eic-shell --version
-```
+curl -L https://github.com/eic/eic-shell/raw/main/install.sh | bash -s -v 26.03.1-stable
+```bash
 
-Expected output:
 
-```
-26.03.1-stable
-```
 
 ---
 
 ## 🌐 3. Enter eic-shell
 
+For systems with access to CVMFS:
 ```bash
 ./eic-shell -v 26.03.1-stable
 ```
+
+For systems with NO access to CVMFS:
+```bash
+./eic-shell
+```
+Check that you have installed the specific version of eic-shell during the previous step.
 
 ---
 
